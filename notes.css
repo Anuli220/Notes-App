@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right,#1e3c72,#2a5298);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+}
+
+h1{
+    margin-bottom: 1rem;
+}
+
+.app-container{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 300px;
+}
+
+.notes-input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.notes-input:focus{
+    outline: none;
+}
+
+button{
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #ff6b6b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #ff4757;
+}
+
+.notes-list{
+    list-style: none;
+}
+
+.note-item{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.delete-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4571;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
